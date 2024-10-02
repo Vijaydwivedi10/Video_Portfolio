@@ -4,12 +4,6 @@ import vijayImage from '../Images/vijay.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 
 function Header() {
-    const textArray = [
-        'Video Editor', 
-        'Graphic designer', 
-        'Frontend developer',
-
-    ];
 
     return (
         <div className="header-container">

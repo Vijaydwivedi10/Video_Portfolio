@@ -72,6 +72,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U1"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1p9RNdoAXVPatszYiEBrZoV5NeK0lvU0A/preview"
                                     allow="autoplay; fullscreen"
@@ -93,6 +94,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U2"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1ugU8Qjo4wV8MpdGVcPz1HZ2VMSk8MSXG/preview"
                                     allow="autoplay; fullscreen"
@@ -114,6 +116,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U3"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1ArMk3NuQmxM0UOjS07JE9jKWfFVBHWap/preview"
                                     allow="autoplay; fullscreen"
@@ -135,6 +138,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U4"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1Gn6ggcEif27xehYauppvrWYVf90Fl5xL/preview"
                                     allow="autoplay; fullscreen"
@@ -156,6 +160,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U5"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1t6q5jghEaQ92T-E6Toy-xqGdZpLKSJLg/preview"
                                     allow="autoplay; fullscreen"
@@ -177,6 +182,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U6"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1ep7Xf2GmojuEpffZeA55MJZ11YGe5UUV/preview"
                                     allow="autoplay; fullscreen"
@@ -205,6 +211,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U7"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1XpijUN6c2BLQjt4hiU52NuEFFn-RZ_cL/preview"
                                     allow="autoplay; fullscreen"
@@ -226,6 +233,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U8"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1om4rM0LWO8hqPyzPjESJQZ6H9UW8mHEx/preview"
                                     allow="autoplay; fullscreen"
@@ -247,6 +255,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U9"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1a1jHxmnG-NXK53VhKYfaOLgQ0Qqd9-1T/preview"
                                     allow="autoplay; fullscreen"
@@ -268,6 +277,7 @@ function Portfolio() {
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                             ) : (
                                 <iframe
+                                    title="U10"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1REmpxCvG5R1UQMd6AhtRLer04_7CefH8/preview"
                                     allow="autoplay; fullscreen"
@@ -307,6 +317,7 @@ function Portfolio() {
                             style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
                     ) : (
                         <iframe
+                            title="U12"
                             className="video-player"
                             src={video.src}
                             allow="autoplay; fullscreen"
