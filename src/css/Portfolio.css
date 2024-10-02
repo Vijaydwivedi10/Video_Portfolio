@@ -1,0 +1,168 @@
+/* Portfolio Container */
+.portfolio {
+    max-width: 1600px; /* Maximum width for large screens */
+    margin: 0 auto; /* Center the portfolio on the page */
+    background-color: #36479c; /* Background color for the entire portfolio */
+    padding: 20px; /* Add padding around the portfolio */
+}
+
+/* Main Heading */
+.main-heading {
+    text-align: center;
+    background-color: #cb9021; /* Main heading background color */
+    color: rgb(228, 223, 223);
+    padding: 10px;
+    letter-spacing: 5px;
+    font-family: "Lora", serif;
+    border-radius: 8px; /* Add slight border-radius for better aesthetics */
+}
+
+/* General Section Styles */
+.section {
+    border-radius: 10px; /* Rounded corners for sections */
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Space between sections */
+    padding: 20px; /* Padding inside the section */
+    background-color: #fff; /* Background for sections */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for a clean look */
+}
+
+/* Section Heading Styles */
+.section h2 {
+    text-align: center;
+    background-color: rgb(228, 223, 223); /* Background for section headings */
+    color: #cb9021; /* Text color */
+    padding: 10px;
+    border-radius: 20px; /* Rounded corners */
+    max-width: 1000px;
+    margin: 0 auto; /* Center the heading */
+    font-family: "Concert One", sans-serif;
+}
+
+.section h3 {
+    text-align: center;
+    background-color: #cb9021; /* Section subheading background color */
+    color: rgb(228, 223, 223); /* Text color */
+    padding: 3px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+/* Section Content Styles */
+.cipla-content, .kroopai-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center align items */
+    padding: 20px;
+}
+
+/* Video Styles */
+.video {
+    flex: 1 0 calc(50% - 20px); /* Each video takes up 50% of the width with margin */
+    margin: 10px; /* Space between videos */
+    max-width: 600px; /* Max width for each video */
+    box-sizing: border-box;
+}
+
+/* Video and Iframe Player Styles */
+.video-player {
+    width: 100%;
+    max-height: 400px; /* Control height of video */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+
+/* Responsive Video Layout */
+@media (max-width: 768px) {
+    .video {
+        flex: 1 0 100%; /* On smaller screens, each video takes full width */
+        margin: 10px 0;
+    }
+}
+
+
+/* Comparison Section */
+.comparison-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Image Design Styles */
+.design-image {
+    width: 100%;
+    max-width: 600px; /* Max width for design images */
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .design-image {
+        flex: 1 0 100%; /* Each image takes full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+/* Custom Font for Specific Text */
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Styling for the Graphic Images Grid */
+.graphic-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns for larger screens */
+    grid-gap: 16px; /* Space between the images */
+    margin-top: 20px;
+}
+
+/* Responsive for Tablets and Phones */
+@media (max-width: 768px) {
+    .graphic-images {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on smaller screens */
+    }
+}
+
+/* Styling for Each Image in the Grid */
+.graphic-images img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* General Styling for Portfolio Images */
+.work-image {
+    width: 90%; /* Adjusted width */
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+
+/* Responsive Iframe Container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* This is a 16:9 aspect ratio, adjust as needed */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}

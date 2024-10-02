@@ -1,0 +1,214 @@
+.header-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* 2/5 for image, 3/5 for text */
+    height: 590px; /* Full screen height */
+    background-color: #343a40; /* Dark background */
+    color: white;
+    position: relative; /* Position relative to allow absolute positioning inside */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.header-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: -50px;
+}
+
+.header-image {
+    border-radius: 50%;
+    width: 60%;
+    max-width: 400px; /* Adjust the image size for responsiveness */
+    height: auto;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.header-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.header-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #343a40;
+    background-color: #ffc107; /* Bootstrap's warning color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.header-button:hover {
+    background-color: #e0a800; /* Darker shade for hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 1fr; /* Stack image and text vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header-image-container {
+        margin-bottom: 20px;
+    }
+
+    .header-image {
+        width: 50%;
+        max-width: 200px; /* Smaller max-width for mobile */
+    }
+
+    .header-content {
+        padding: 0 15px;
+    }
+
+    .header-title {
+        font-size: 2rem; /* Smaller font size for mobile */
+        margin-bottom: 15px;
+    }
+
+    .header-subtitle {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+        margin-bottom: 15px;
+    }
+
+    .header-description {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    .header-button {
+        font-size: 1rem; /* Smaller font size for mobile */
+        padding: 8px 16px; /* Smaller padding for mobile */
+        align-self: center; /* Center the button on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.5rem; /* Further reduced font size for very small screens */
+    }
+
+    .header-subtitle {
+        font-size: 1rem; /* Further reduced font size for very small screens */
+    }
+
+    .header-description {
+        font-size: 0.8rem; /* Further reduced font size for very small screens */
+    }
+
+    .header-button {
+        font-size: 0.9rem; /* Further reduced font size for very small screens */
+        padding: 6px 12px; /* Further reduced padding for very small screens */
+    }
+}
+
+
+/* Floating Icons */
+.floating-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure icons don't interfere with other elements */
+    z-index: 0; /* Place icons behind other content */
+}
+
+.floating-icon {
+    position: absolute;
+    width: 480px; /* Adjust the size of the icons */
+    animation: float 10s infinite ease-in-out; /* Apply floating animation */
+    opacity: 0.5; /* Make icons semi-transparent */
+}
+
+/* Define keyframes for floating animation */
+@keyframes float {
+    0% { transform: translateY(0) rotate(40deg); }
+    50% { transform: translateY(-20px) rotate(45deg); }
+    100% { transform: translateY(0) rotate(40deg); }
+}
+
+/* Position individual icons differently */
+.floating-icon:nth-child(1) {
+    top: 40%;
+    left: -2%;
+    animation-delay: 0s;
+    z-index: -1;
+}
+
+.floating-icon:nth-child(2) {
+    top: 20%;
+    left: 80%;
+    animation-delay: 2s;
+}
+
+.floating-icon:nth-child(3) {
+    top: 75%;
+    left: 75%;
+    animation-delay: 4s;
+}
+
+.floating-icon:nth-child(4) {
+    top: 15%;
+    left: 55%;
+    animation-delay: 4s;
+}
+
+.floating-icon:nth-child(5) {
+    top: 40%;
+    left: 65%;
+    animation-delay: 4s;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .floating-icon {
+        width: 100px; /* Smaller icons on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-icon {
+        width: 40px; /* Even smaller icons on very small screens */
+    }
+}
+
+
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
