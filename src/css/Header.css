@@ -109,25 +109,6 @@
     }
 }
 
-@media (max-width: 480px) {
-    .header-title {
-        font-size: 1.5rem; /* Further reduced font size for very small screens */
-    }
-
-    .header-subtitle {
-        font-size: 1rem; /* Further reduced font size for very small screens */
-    }
-
-    .header-description {
-        font-size: 0.8rem; /* Further reduced font size for very small screens */
-    }
-
-    .header-button {
-        font-size: 0.9rem; /* Further reduced font size for very small screens */
-        padding: 6px 12px; /* Further reduced padding for very small screens */
-    }
-}
-
 
 /* Floating Icons */
 .floating-icons {
@@ -186,18 +167,6 @@
     animation-delay: 4s;
 }
 
-/* Adjust for mobile responsiveness */
-@media (max-width: 768px) {
-    .floating-icon {
-        width: 100px; /* Smaller icons on mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .floating-icon {
-        width: 40px; /* Even smaller icons on very small screens */
-    }
-}
 
 
 .rock-salt-regular {
@@ -212,3 +181,68 @@
     font-style: normal;
   }
   
+
+  .header-content {
+    padding: 20px; /* Default padding */
+  }
+
+/* General styles for animated text */
+.animated-text {
+    font-size: 2em; /* Default size for larger screens */
+    font-weight: 400; /* Corrected property name */
+    letter-spacing: 0.10em; /* Corrected property name */
+    color: orange; /* Direct value without quotes */
+}
+
+
+/* For small devices */
+@media (max-width: 600px) {
+    .animated-text {
+        font-size: 1.3em; /* Smaller font size for small screens */
+    }
+
+    .header-title {
+        font-size: 1.5em; /* Adjust title size */
+    }
+
+    .header-subtitle {
+        font-size: 1.2em; /* Adjust subtitle size */
+    }
+
+    .header-description {
+        font-size: 0.9em; /* Adjust description size */
+    }
+
+    .header-button {
+        font-size: 0.8em; /* Adjust button size */
+        padding: 10px; /* Adjust button padding */
+    }
+
+    .header-content {
+        padding: 10px; /* Adjust overall padding */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .animated-text {
+        font-size: 1em; /* Further reduce size for very small screens */
+    }
+
+    .header-title {
+        font-size: 1.2em; /* Further reduce title size */
+    }
+
+    .header-subtitle {
+        font-size: 1em; /* Further reduce subtitle size */
+    }
+
+    .header-description {
+        font-size: 0.8em; /* Further reduce description size */
+    }
+
+    .header-button {
+        font-size: 0.9em; /* Further reduce button size */
+        padding: 6px 12px; /* Further reduce button padding */
+    }
+}

@@ -30,27 +30,22 @@ function Header() {
             <div className="header-content">
             <h1 className="header-title">HI! MY NAME IS VIJAY</h1>
             <TypeAnimation
-  sequence={[
-    // Same substring at the start will only be typed once, initially
-    'I am a Video Editor',
-    1000,
-    'I am a Graphic Designer',
-    1000,
-    'I am a Frontend Developer',
-    1000,
-    'I am a Motion Designer',
-    1000,
-  ]}
-  font-family= {"Rock Salt"}
-  speed={50}
-  style={{ fontSize: '2em',
-    fontWeight: '400', // or 'bold'
-    letterSpacing: '0.10em', // or '1px', adjust as needed
-    color: 'orange' // or '#FFA500' 
-}}
-
-  repeat={Infinity}
-/>
+      className="animated-text" // Add this class
+      sequence={[
+        'I am a Video Editor',
+        1000,
+        'I am a Graphic Designer',
+        1000,
+        'I am a Frontend Developer',
+        1000,
+        'I am a Motion Designer',
+        1000,
+      ]}
+      font-family={"Rock Salt"}
+      speed={50}
+      
+      repeat={Infinity}
+    />
                 <h2 className="header-subtitle">IIT Ropar - Computer Science & Engineering</h2>
                 <p className="header-description">
                     Welcome to my portfolio! I am a passionate software developer with expertise in data structures, algorithms, and software engineering. Explore my work and get to know more about my journey.
