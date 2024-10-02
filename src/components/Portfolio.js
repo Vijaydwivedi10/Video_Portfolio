@@ -218,27 +218,7 @@ function Portfolio() {
                         </div>
                     </div>
 
-                    {/* Kroop AI Video 2 */}
-                    <div className="video">
-                        <h3>Quick Video Presentation</h3>
-                        <div className="iframe-container">
-                            {!showVideo[7] ? (
-                                <img
-                                    src={Thumbnail_Q} // Use your poster image here for Kroop AI Video 2
-                                    alt="Video Thumbnail"
-                                    onClick={() => handleVideoClick(7)}
-                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
-                            ) : (
-                                <iframe
-                                    title="U8"
-                                    className="video-player"
-                                    src="https://drive.google.com/file/d/1om4rM0LWO8hqPyzPjESJQZ6H9UW8mHEx/preview"
-                                    allow="autoplay; fullscreen"
-                                    allowFullScreen>
-                                </iframe>
-                            )}
-                        </div>
-                    </div>
+                   
 
                     {/* Kroop AI Video 3 */}
                     <div className="video">
@@ -277,6 +257,28 @@ function Portfolio() {
                                     title="U10"
                                     className="video-player"
                                     src="https://drive.google.com/file/d/1REmpxCvG5R1UQMd6AhtRLer04_7CefH8/preview"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen>
+                                </iframe>
+                            )}
+                        </div>
+                    </div>
+
+                     {/* Kroop AI Video 2 */}
+                     <div className="video">
+                        <h3>Quick Video Presentation</h3>
+                        <div className="iframe-container">
+                            {!showVideo[7] ? (
+                                <img
+                                    src={Thumbnail_Q} // Use your poster image here for Kroop AI Video 2
+                                    alt="Video Thumbnail"
+                                    onClick={() => handleVideoClick(7)}
+                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                            ) : (
+                                <iframe
+                                    title="U8"
+                                    className="video-player"
+                                    src="https://drive.google.com/file/d/1om4rM0LWO8hqPyzPjESJQZ6H9UW8mHEx/preview"
                                     allow="autoplay; fullscreen"
                                     allowFullScreen>
                                 </iframe>
