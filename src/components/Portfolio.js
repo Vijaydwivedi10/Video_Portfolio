@@ -291,7 +291,7 @@ function Portfolio() {
             {/* Comparison Section */}
             {/* Comparison Section */}
 <div className="section Comparison">
-    <h2>Comparison Reels</h2>
+    <h2>Shorts/Reels</h2>
     <div className="comparison-videos">
         {[
             {

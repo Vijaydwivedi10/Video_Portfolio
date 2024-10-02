@@ -1,128 +1,81 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import {
+  MDBContainer,
+  MDBCol,
+  MDBRow,
+  MDBIcon,
+  MDBBtn,
+  MDBCard,
+  MDBCardBody
+} from 'mdb-react-ui-kit';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Ensure this line is included
 
 export default function Contact() {
-  
-
   return (
-    <div style={styles.container} id='Contact'>
-      <div style={styles.row}>
-        {/* Social Media Links */}
-        <div style={styles.column}>
+    <MDBContainer className='text-center' style={{ marginTop: '20px' }} id='Contact'> {/* Add the ID here */}
+      <MDBRow className='mt-4'>
+        {/* Social Media Column */}
+        <MDBCol md='6' className='mb-4'>
           <h3>Connect with Me</h3>
-          <section style={styles.socialMedia}>
-            <a href='https://www.instagram.com/_vijaydwivedi/' target='_blank' rel='noopener noreferrer' style={styles.icon}>
-              <i className='fab fa-instagram'></i>
-            </a>
-            <a href='https://www.linkedin.com/in/vijay-dwivedi-22b70b203/' target='_blank' rel='noopener noreferrer' style={styles.icon}>
-              <i className='fab fa-linkedin'></i>
-            </a>
-            <a href='https://github.com/Vijaydwivedi10' target='_blank' rel='noopener noreferrer' style={styles.icon}>
-              <i className='fab fa-github'></i>
-            </a>
+          <section className='mb-4'>
+            <MDBBtn
+              rippleColor="dark"
+              color='link'
+              floating
+              size="lg"
+              style={{ fontSize: '3.5rem' }}
+              className='text-dark m-1'
+              href='https://www.instagram.com/_vijaydwivedi/' // Replace with your actual link
+              role='button'
+            >
+              <MDBIcon fab className='fa-instagram' />
+            </MDBBtn>
+
+            <MDBBtn
+              rippleColor="dark"
+              color='link'
+              floating
+              size="lg"
+              style={{ fontSize: '3.5rem' }}
+              className='text-dark m-1'
+              href='https://www.linkedin.com/in/vijay-dwivedi-22b70b203/' // Replace with your actual link
+              role='button'
+            >
+              <MDBIcon fab className='fa-linkedin' />
+            </MDBBtn>
+
+            <MDBBtn
+              rippleColor="dark"
+              color='link'
+              floating
+              size="lg"
+              style={{ fontSize: '3.5rem' }}
+              className='text-dark m-1'
+              href='https://github.com/Vijaydwivedi10' // Replace with your actual link
+              role='button'
+            >
+              <MDBIcon fab className='fa-github' />
+            </MDBBtn>
           </section>
-        </div>
+        </MDBCol>
 
-        {/* Contact Details */}
-        <div style={styles.column}>
+        {/* Contact Details Column */}
+        <MDBCol md='6' className='mb-4'>
           <h3>Contact Details</h3>
-          <div style={styles.card}>
-            <p>Email: vijaynews50785@gmail.com</p>
-            <p>Phone: +91 8299192478</p>
-            <p>Location: Kanpur, Uttar Pradesh, India</p>
-          </div>
-        </div>
-      </div>
+          <MDBCard>
+            <MDBCardBody>
+              <p>Email: vijaynews50785@gmail.com</p> {/* Replace with your email */}
+              <p>Phone: +91 8299192478</p> {/* Replace with your phone number */}
+              <p>Location: Kanpur, Uttar Pradesh, India</p> {/* Replace with your location */}
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
 
-
-      <div style={styles.footer}>
-        <p style={{ margin: 0 }}>...</p>
+      <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', padding: '200px' }}>
+        ...
+        
       </div>
-    </div>
+    </MDBContainer>
   );
 }
-
-const styles = {
-  container: {
-    textAlign: 'center',
-    marginTop: '20px',
-    padding: '20px',
-    border: '1px solid #ddd',
-    borderRadius: '8px',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-    backgroundColor: '#fff',
-  },
-  row: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    marginBottom: '20px',
-  },
-  column: {
-    flex: 1,
-    margin: '0 10px',
-  },
-  socialMedia: {
-    marginBottom: '20px',
-  },
-  icon: {
-    fontSize: '3rem',
-    margin: '0 10px',
-    color: '#333',
-    textDecoration: 'none',
-  },
-  card: {
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    padding: '15px',
-    backgroundColor: '#f9f9f9',
-    textAlign: 'left',
-  },
-  formContainer: {
-    marginTop: '20px',
-  },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  input: {
-    width: '80%',
-    padding: '10px',
-    margin: '10px 0',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    fontSize: '1rem',
-  },
-  textarea: {
-    width: '80%',
-    padding: '10px',
-    margin: '10px 0',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    fontSize: '1rem',
-    minHeight: '100px',
-  },
-  button: {
-    width: '40%',
-    padding: '10px',
-    border: 'none',
-    borderRadius: '4px',
-    backgroundColor: '#cb9021',
-    color: '#fff',
-    fontSize: '1rem',
-    cursor: 'pointer',
-  },
-  successMessage: {
-    margin: '10px 0',
-    color: 'green',
-  },
-  errorMessage: {
-    margin: '10px 0',
-    color: 'red',
-  },
-  footer: {
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: 'rgba(0, 0, 0, 0.1)',
-  },
-};
