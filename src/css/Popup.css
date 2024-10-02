@@ -17,8 +17,11 @@
     border-radius: 8px;
     width: 100%; /* Width can be adjusted */
     max-width: 900px; /* Max width for larger screens */
+    max-height: 80vh; /* Maximum height for the popup */
+    overflow-y: auto; /* Enable vertical scrolling */
     position: relative;
 }
+
 
 .popup-close-button {
     position: absolute;

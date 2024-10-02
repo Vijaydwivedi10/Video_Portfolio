@@ -13,11 +13,43 @@ function Popup({ onClose }) {
                     Here are a few reasons why you should consider me:
                 </p>
                 <ul className="popup-list">
-                    <li className="popup-list-item">Extensive experience in video editing and graphic design.</li>
-                    <li className="popup-list-item">Strong knowledge of data structures and algorithms.</li>
-                    <li className="popup-list-item">Proficiency in various software tools, including Adobe Premiere Pro and After Effects.</li>
-                    <li className="popup-list-item">Passion for creating engaging and high-quality content.</li>
-                    <li className="popup-list-item">Proven ability to work under tight deadlines and deliver results.</li>
+                    <li className="popup-list-item">
+                        I graduated from IIT Ropar with a degree in Computer Science and Engineering, which demonstrates my 
+                        <b><i> technical skills</i></b> and the ability to learn anything quickly. Check out my degree 
+                        <a href="https://drive.google.com/file/d/1MlahYg7nmqXmvE_yAPc-ecVfEdAt7rOQ/view" className="popup-link"> here</a>.
+                    </li>
+                    <li className="popup-list-item">
+                        Although I graduated from a <b><i> technical field</i></b>, I chose designing because of my passion 
+                        and creativity, which aligns with my future goals. This decision shows just how <b><i> passionate </i></b> 
+                        I am.
+                    </li>
+                    <li className="popup-list-item">
+    I possess a strong skill set in <b><i>Premiere Pro</i></b>, <b><i>Figma</i></b>, <b><i>After Effects</i></b>, <b><i>Photoshop</i></b>, <b><i>Canva</i></b>, <b><i>CapCut</i></b>, <b><i>ReactJS</i></b>, <b><i>CSS</i></b>, and <b><i>Material UI</i></b>. These tools empower me to transform ideas into captivating visual narratives and engaging user experiences.
+</li>
+
+                    <li className="popup-list-item">
+                        I am committed to working <b><i>12 hours a day, 7 days a week</i></b>, which shows my dedication and 
+                        passion for delivering results in this field.
+                    </li>
+                    <li className="popup-list-item">
+                        I have worked with both CIPLA (a corporate giant) and Kroop AI (a startup), demonstrating my capability 
+                        to adapt and thrive in different environments while producing excellent outcomes.
+                    </li>
+                    <li className="popup-list-item">
+                        With <b><i>1 year of corporate experience</i></b>, I have become highly <b><i>disciplined</i></b> and a 
+                        strong team player.
+                    </li>
+                    <li className="popup-list-item">
+                        I have pitched my own startup idea on various platforms, including physically at IIT Kanpur. My 
+                        <a href="https://docs.google.com/presentation/d/1s49MqMVy-ruM2vyNDAJ_Q6JdBkjnS1ZGTDqUqFQ6xZ0/edit#slide=id.g26b582913a8_0_382" className="popup-link"> pitch deck</a> (Ask permission) and 
+                        <a href="https://drive.google.com/drive/folders/1McwUfLfmkx9pciBWiY6H68_TTV_AL30V" className="popup-link"> certificates</a> showcase my creativity and in-depth 
+                        knowledge of the startup world.
+                    </li>
+                    <li className="popup-list-item">
+                        I was a dancer for 3-4 years, winning many competitions along the way. You can check out my dance 
+                        performances on my Instagram 
+                        <a href="https://www.instagram.com/_vijaydwivedi/" className="popup-link"> here</a>, further proof of my creativity.
+                    </li>
                 </ul>
             </div>
         </div>

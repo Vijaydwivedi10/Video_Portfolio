@@ -9,13 +9,35 @@
 /* Main Heading */
 .main-heading {
     text-align: center;
-    background-color: #cb9021; /* Main heading background color */
-    color: rgb(228, 223, 223);
-    padding: 10px;
-    letter-spacing: 5px;
-    font-family: "Lora", serif;
+    background: linear-gradient(270deg, #cb9021, #d5a83a, #cb9021); /* Gradient background */
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    letter-spacing: 8px;
+    font-family:inherit;
     border-radius: 8px; /* Add slight border-radius for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-size: 300% 100%; /* Allow the gradient to expand for animation */
+    animation: liquidEffect 3s ease infinite; /* Animation for liquid effect */
 }
+
+/* Animation for liquid effect */
+@keyframes liquidEffect {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+        background-position: 0% 50%; /* End position */
+    }
+}
+
+/* Text shadow for depth */
+.main-heading {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add depth to the text */
+}
+
 
 /* General Section Styles */
 .section {
@@ -165,4 +187,26 @@
     height: 100%;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+
+.Work-overview {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically if needed */
+}
+
+.work-image {
+    width: 90%; /* Default width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+}
+
+/* Media query for small devices (phones) */
+@media (max-width: 768px) {
+    .work-image {
+        width: 120%; /* Make the image larger on small devices */
+    }
 }

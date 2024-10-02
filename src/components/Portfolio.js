@@ -25,6 +25,7 @@ import Sleeky from '../ImagesVideos/Sleeky.jpg';
 import Graphics_11 from '../ImagesVideos/Graphics_11.png';
 import Before_After from '../ImagesVideos/Before_After.jpg';
 import Motion from '../ImagesVideos/Motion.jpg';
+import GKroop from '../ImagesVideos/GKroop.png';
 
 
 function Portfolio() {
@@ -47,18 +48,14 @@ function Portfolio() {
             <div className="section cipla-work">
                 <h2>CIPLA Work</h2>
                 <div className="cipla-content">
-                    <img
-                        src={Cipla_Work_Overview}
-                        alt="CIPLA Work Overview"
-                        className="work-image"
-                        style={{
-                            width: '90%', // Set the desired width
-                            height: 'auto', // Maintain aspect ratio
-                            borderRadius: '12px', // Rounded corners
-                            marginBottom: '4px',
-                            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)', // Enhanced shadow effect
-                        }}
-                    />
+                <div className='Work-overview'>
+    <img
+        src={Cipla_Work_Overview}
+        alt="CIPLA Work Overview"
+        className="work-image"
+    />
+</div>
+
 
                     {/* Video 1 */}
                     <div className="video">
@@ -343,6 +340,12 @@ function Portfolio() {
                 alt="CIPLA Work Overview"
                 className="work-image"
             />
+
+<img
+                src={PHD_Applicants}
+                alt="CIPLA Work Overview"
+                className="work-image"
+            />
             
         </div>
         <div className="column-2">
@@ -356,28 +359,8 @@ function Portfolio() {
                 alt="CIPLA Work Overview"
                 className="work-image"
             />
-            <img
-                src={PHD_Jobposting}
-                alt="CIPLA Work Overview"
-                className="work-image"
-            />
-            <img
-                src={PHD_Applicants}
-                alt="CIPLA Work Overview"
-                className="work-image"
-            />
-            </div>
-            <div className="column-3">
-            <img
-                src={PHD_Expereinces}
-                alt="CIPLA Work Overview"
-                className="work-image"
-            />
-            <img
-                src={PHD_Jobdetails}
-                alt="CIPLA Work Overview"
-                className="work-image"
-            />
+
+
 
 <img
                 src={PHD_Interview}
@@ -390,6 +373,26 @@ function Portfolio() {
                 alt="CIPLA Work Overview"
                 className="work-image"
             />
+            
+            
+            </div>
+            <div className="column-3">
+            <img
+                src={PHD_Expereinces}
+                alt="CIPLA Work Overview"
+                className="work-image"
+            />
+            <img
+                src={PHD_Jobdetails}
+                alt="CIPLA Work Overview"
+                className="work-image"
+            />
+<img
+                src={GKroop}
+                alt="CIPLA Work Overview"
+                className="work-image"
+            />
+
 
             </div>
 
@@ -428,6 +431,11 @@ function Portfolio() {
             />
             <img
                 src={Thumbnail_B}
+                alt="CIPLA Work Overview"
+                className="work-image"
+            />
+            <img
+                src={PHD_Jobposting}
                 alt="CIPLA Work Overview"
                 className="work-image"
             />

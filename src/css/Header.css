@@ -40,7 +40,7 @@
 }
 
 .header-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -51,22 +51,38 @@
     text-align: justify;
 }
 
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Slight upward bounce */
+    }
+}
+
 .header-button {
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #343a40;
-    background-color: #ffc107; /* Bootstrap's warning color */
+    background-color: #ffc107; /* Default yellow */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-self: flex-start;
     text-align: center;
+    align-self: flex-start; /* Keeps it aligned to the left of the div */
+    animation: bounce 1s infinite ease-in-out; /* Always bounce */
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
+/* Stop bouncing and change color on hover */
 .header-button:hover {
-    background-color: #e0a800; /* Darker shade for hover */
+    animation: none; /* Stop bouncing */
+    background-color: #e8b827; /* Change to greener shade */
 }
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -95,7 +111,7 @@
     }
 
     .header-subtitle {
-        font-size: 1.2rem; /* Smaller font size for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
         margin-bottom: 15px;
     }
 
@@ -209,7 +225,7 @@
 
 
     .header-subtitle {
-        font-size: 1.2em; /* Adjust subtitle size */
+        font-size: 0.8em; /* Adjust subtitle size */
     }
 
     .header-description {
@@ -239,7 +255,7 @@
 
 
     .header-subtitle {
-        font-size: 1em; /* Further reduce subtitle size */
+        font-size: 0.6em; /* Further reduce subtitle size */
     }
 
     .header-description {
