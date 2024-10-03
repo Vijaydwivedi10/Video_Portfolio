@@ -4,24 +4,73 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background: linear-gradient(45deg, rgba(66, 78, 6, 0.8), rgba(39, 48, 5, 0.8), rgba(23, 23, 1, 0.8));
+    background-size: 400% 400%;
+    animation: backgroundMove 10s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure it is above other content */
+    z-index: 1000;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .popup-content {
-    background-color: white; /* White background for the popup */
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 100%; /* Width can be adjusted */
-    max-width: 900px; /* Max width for larger screens */
-    max-height: 80vh; /* Maximum height for the popup */
-    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%;
+    max-width: 900px;
+    max-height: 80vh;
+    overflow-y: auto;
     position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(52, 152, 219, 0.5);
+    animation: slideIn 0.5s ease-out, glowEffect 3s ease-in-out infinite;
+    opacity: 0;
+    animation-fill-mode: forwards; /* Ensure the final state is retained */
 }
 
+/* Keyframes for the sliding effect */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px); /* Starts above the viewport */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Slide to original position */
+        opacity: 1;
+    }
+}
+
+/* Keyframes for the glowing effect */
+@keyframes glowEffect {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(231, 76, 60, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(52, 152, 219, 1), 0 0 40px rgba(231, 76, 60, 1);
+    }
+}
+
+
+@keyframes glowEffect {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(231, 76, 60, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(52, 152, 219, 1), 0 0 40px rgba(231, 76, 60, 1);
+    }
+}
 
 .popup-close-button {
     position: absolute;
@@ -31,54 +80,55 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: black;
 }
 
 .popup-heading {
     margin-top: 0;
-    color: black; /* Text color for heading */
-    font-size: 24px; /* Adjust font size for heading */
-    text-align: left; /* Left align heading */
+    color: black;
+    font-size: 24px;
+    text-align: left;
 }
 
 .popup-paragraph {
-    color: black; /* Text color for paragraph */
-    font-size: 16px; /* Adjust font size for paragraph */
-    text-align: left; /* Left align paragraph */
+    color: black;
+    font-size: 16px;
+    text-align: left;
 }
 
 .popup-list {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .popup-list-item {
-    position: relative; /* To position custom bullet */
-    color: black; /* Text color for list items */
-    font-size: 14px; /* Smaller font size for list items */
-    padding-left: 20px; /* Space for custom bullet */
-    margin-bottom: 8px; /* Space between list items */
-    text-align: left; /* Left align list items */
+    position: relative;
+    color: black;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 .popup-list-item::before {
-    content: "•"; /* Custom bullet */
-    color: #3498db; /* Color for the bullet */
+    content: "•";
+    color: #3498db;
     position: absolute;
-    left: 0; /* Position bullet to the left */
-    font-size: 18px; /* Size of the bullet */
+    left: 0;
+    font-size: 18px;
 }
 
 /* Responsive styles for small devices */
 @media (max-width: 600px) {
     .popup-heading {
-        font-size: 20px; /* Smaller font size for heading */
+        font-size: 20px;
     }
 
     .popup-paragraph {
-        font-size: 14px; /* Smaller font size for paragraph */
+        font-size: 14px;
     }
 
     .popup-list-item {
-        font-size: 12px; /* Smaller font size for list items */
+        font-size: 12px;
     }
 }

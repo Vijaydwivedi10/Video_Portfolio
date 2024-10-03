@@ -71,12 +71,14 @@ function Portfolio() {
                     <div className="video">
                         <h3>CIPLA Sample Video 1</h3>
                         <div className="iframe-container">
-                            {!showVideo[0] ? (
+                            {!showVideo[0] ? (<> 
                                 <img
                                     src={Thumbnail_OM} // Use your poster image here for Video 1
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(0)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U1"
@@ -94,11 +96,14 @@ function Portfolio() {
                         <h3>CIPLA Sample Video 2</h3>
                         <div className="iframe-container">
                             {!showVideo[1] ? (
+                                <>
                                 <img
                                     src={Thumbnail_OM} // Use your poster image here for Video 2
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(1)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U2"
@@ -116,11 +121,14 @@ function Portfolio() {
                         <h3>CIPLA Sample Video 3</h3>
                         <div className="iframe-container">
                             {!showVideo[2] ? (
+                                <>
                                 <img
                                     src={Thumbnail_YF} // Use your poster image here for Video 3
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(2)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U3"
@@ -138,11 +146,14 @@ function Portfolio() {
                         <h3>CIPLA Sample Video 4</h3>
                         <div className="iframe-container">
                             {!showVideo[3] ? (
+                                <>
                                 <img
                                     src={Thumbnail_B} // Use your poster image here for Video 4
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(3)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U4"
@@ -160,11 +171,14 @@ function Portfolio() {
                         <h3>CIPLA Sample Video 5</h3>
                         <div className="iframe-container">
                             {!showVideo[4] ? (
+                                <>
                                 <img
                                     src={Thumbnail_OF} // Use your poster image here for Video 5
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(4)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U5"
@@ -182,11 +196,14 @@ function Portfolio() {
                         <h3>CIPLA Sample Video 6</h3>
                         <div className="iframe-container">
                             {!showVideo[5] ? (
+                                <>
                                 <img
                                     src={Thumbnail_YF} // Use your poster image here for Video 6
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(5)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U6"
@@ -211,11 +228,14 @@ function Portfolio() {
                         <h3>Logo Animation Video</h3>
                         <div className="iframe-container">
                             {!showVideo[6] ? (
+                                <>
                                 <img
                                     src={Kroop} // Use your poster image here for Kroop AI Video 1
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(6)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U7"
@@ -235,11 +255,14 @@ function Portfolio() {
                         <h3>Custom Animation video</h3>
                         <div className="iframe-container">
                             {!showVideo[8] ? (
+                                <>
                                 <img
                                     src={Thumbnail_CA} // Use your poster image here for Kroop AI Video 3
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(8)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U9"
@@ -257,11 +280,14 @@ function Portfolio() {
                         <h3>Motion Graphics Video</h3>
                         <div className="iframe-container">
                             {!showVideo[9] ? (
+                                <>
                                 <img
                                     src={Viz} // Use your poster image here for Kroop AI Video 4
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(9)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U10"
@@ -279,11 +305,14 @@ function Portfolio() {
                         <h3>Quick Video Presentation</h3>
                         <div className="iframe-container">
                             {!showVideo[7] ? (
+                                <>
                                 <img
                                     src={Thumbnail_Q} // Use your poster image here for Kroop AI Video 2
                                     alt="Video Thumbnail"
                                     onClick={() => handleVideoClick(7)}
                                     style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
                             ) : (
                                 <iframe
                                     title="U8"
@@ -319,11 +348,14 @@ function Portfolio() {
                 <h3>{video.title}</h3>
                 <div className="iframe-container">
                     {!showVideo[index + 10] ? (
+                        <>
                         <img
                             src={video.thumbnail} // Use the thumbnail from the video object
                             alt="Video Thumbnail"
                             onClick={() => handleVideoClick(index + 10)}
                             style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                            <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                            </>
                     ) : (
                         <iframe
                             title="U12"

@@ -177,6 +177,7 @@
     padding-bottom: 56.25%; /* This is a 16:9 aspect ratio, adjust as needed */
     height: 0;
     overflow: hidden;
+    display: inline-block;
 }
 
 .iframe-container iframe {
@@ -202,6 +203,7 @@
     border-radius: 12px; /* Rounded corners */
     margin-bottom: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+    transition: transform 0.9s ease, filter 0.9s ease;
 }
 
 /* Media query for small devices (phones) */
@@ -214,10 +216,61 @@
 
 .skills {
     width: 100%;       /* Full width of the parent container */
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 30px; /* Increased bottom margin for better spacing */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
 }
 
 .skills-gif {
     width: 100%;       /* Full width of the skills div */
     height: auto;      /* Automatically adjusts the height to maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Soft shadow */
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.skills-gif:hover {
+    transform: scale(1.01); /* Slight zoom on hover */
+    filter: brightness(1.05); /* Slight brightness increase */
+}
+
+
+.work-image:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    filter: brightness(1.05); /* Slight brightness increase */
+}
+
+.iframe-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Add filter transition for blur and brightness */
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.iframe-container img:hover {
+    transform: scale(1.05); /* Enlarge the thumbnail */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    filter: blur(1px) brightness(0.8); /* Reduce blur and brightness on hover */
+}
+
+/* Text overlay styling */
+.iframe-container .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Make sure the text doesn't block the click */
+    transition: opacity 0.3s ease; /* Smooth fade-in for text */
+}
+
+/* Show text on hover */
+.iframe-container img:hover + .overlay-text {
+    opacity: 1; /* Make the text visible on hover */
 }

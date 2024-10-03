@@ -45,7 +45,7 @@ function Header() {
                 />
                 <h2 className="header-subtitle">IIT Ropar - Computer Science & Engineering</h2>
                 <p className="header-description">
-                Welcome to my portfolio! I’m a graphic designer, video editor, motion designer, and frontend developer. My diverse skills help create compelling visual stories that drive growth and spark innovation. Explore my work and discover how I can elevate your vision to new heights!
+                Welcome to my portfolio! I’m a graphic designer, video editor, motion designer, and frontend developer with <b>1 Year of experience</b>. My diverse skills help create compelling visual stories that drive growth and spark innovation. Explore my work and discover how I can elevate your vision to new heights!
                     </p>
                 <button className="header-button" onClick={handlePopupToggle}>
                     WHY ME ?
