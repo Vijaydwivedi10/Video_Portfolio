@@ -26,8 +26,8 @@ import Graphics_11 from '../ImagesVideos/Graphics_11.png';
 import Before_After from '../ImagesVideos/Before_After.jpg';
 import Motion from '../ImagesVideos/Motion.jpg';
 import GKroop from '../ImagesVideos/GKroop.png';
-import Skills from '../ImagesVideos/Skills.gif';
-import Timeline from '../ImagesVideos/Timeline.gif';
+import Skills from '../ImagesVideos/Skillsu.gif';
+import Timeline from '../ImagesVideos/Timelineu.gif';
 
 
 function Portfolio() {
