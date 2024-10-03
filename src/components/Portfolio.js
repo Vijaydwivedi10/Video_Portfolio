@@ -26,6 +26,7 @@ import Graphics_11 from '../ImagesVideos/Graphics_11.png';
 import Before_After from '../ImagesVideos/Before_After.jpg';
 import Motion from '../ImagesVideos/Motion.jpg';
 import GKroop from '../ImagesVideos/GKroop.png';
+import Skills from '../ImagesVideos/Skills.gif';
 
 
 function Portfolio() {
@@ -39,6 +40,15 @@ function Portfolio() {
 
     return (
         <section id="portfolio" className="portfolio">
+            {/*SKILLS*/}
+            <div className='skills'>
+            <img 
+            src={Skills} 
+            alt="Skills" 
+            className="skills-gif"
+            />
+
+            </div>
             {/* Main heading */}
             <div className="main-heading">
                 <h1>EXPERIENCE</h1>

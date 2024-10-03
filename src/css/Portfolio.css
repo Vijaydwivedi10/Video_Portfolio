@@ -210,3 +210,14 @@
         width: 120%; /* Make the image larger on small devices */
     }
 }
+
+
+.skills {
+    width: 100%;       /* Full width of the parent container */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.skills-gif {
+    width: 100%;       /* Full width of the skills div */
+    height: auto;      /* Automatically adjusts the height to maintain aspect ratio */
+}
