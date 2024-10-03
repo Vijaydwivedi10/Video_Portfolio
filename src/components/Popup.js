@@ -15,20 +15,20 @@ function Popup({ onClose }) {
                 <ul className="popup-list">
                     <li className="popup-list-item">
                         I graduated from IIT Ropar with a degree in Computer Science and Engineering, which demonstrates my 
-                        <b><i> technical skills</i></b> and the ability to learn anything quickly. Check out my degree 
+                        <b>  technical skills </b> and the ability to learn anything quickly. Check out my degree 
                         <a href="https://drive.google.com/file/d/1MlahYg7nmqXmvE_yAPc-ecVfEdAt7rOQ/view" className="popup-link"> here</a>.
                     </li>
                     <li className="popup-list-item">
-                        Although I graduated from a <b><i> technical field</i></b>, I chose designing because of my passion 
-                        and creativity, which aligns with my future goals. This decision shows just how <b><i> passionate </i></b> 
+                        Although I graduated from a <b>  technical field </b>, I chose designing because of my passion 
+                        and creativity, which aligns with my future goals. This decision shows just how <b>  passionate  </b> 
                         I am.
                     </li>
                     <li className="popup-list-item">
-    I possess a strong skill set in <b><i>Premiere Pro</i></b>, <b><i>Figma</i></b>, <b><i>After Effects</i></b>, <b><i>Photoshop</i></b>, <b><i>Canva</i></b>, <b><i>CapCut</i></b>, <b><i>ReactJS</i></b>, <b><i>CSS</i></b>, and <b><i>Material UI</i></b>. These tools empower me to transform ideas into captivating visual narratives and engaging user experiences.
+    I possess a strong skill set in <b> Premiere Pro </b>, <b> Figma </b>, <b> After Effects </b>, <b> Photoshop </b>, <b> Canva </b>, <b> CapCut </b>, <b> ReactJS </b>, <b> CSS </b>, and <b> Material UI </b>. These tools empower me to transform ideas into captivating visual narratives and engaging user experiences.
 </li>
 
                     <li className="popup-list-item">
-                        I am committed to working <b><i>12 hours a day, 7 days a week</i></b>, which shows my dedication and 
+                        I am committed to working <b> 12 hours a day, 7 days a week </b>, which shows my dedication and 
                         passion for delivering results in this field.
                     </li>
                     <li className="popup-list-item">
@@ -36,7 +36,7 @@ function Popup({ onClose }) {
                         to adapt and thrive in different environments while producing excellent outcomes.
                     </li>
                     <li className="popup-list-item">
-                        With <b><i>1 year of corporate experience</i></b>, I have become highly <b><i>disciplined</i></b> and a 
+                        With <b> 1 year of corporate experience </b>, I have become highly <b> disciplined </b> and a 
                         strong team player.
                     </li>
                     <li className="popup-list-item">

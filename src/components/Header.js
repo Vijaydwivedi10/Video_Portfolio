@@ -15,12 +15,14 @@ function Header() {
         <div className="header-container">
             {/* Profile image section */}
             <div className="header-image-container">
-                <img
-                    src={vijayImage}
-                    alt="Vijay"
-                    className="header-image"
-                />
-            </div>
+    <img
+        src={vijayImage}
+        alt="Vijay"
+        className="header-image"
+    />
+    
+</div>
+
 
             {/* Header content section */}
             <div className="header-content">

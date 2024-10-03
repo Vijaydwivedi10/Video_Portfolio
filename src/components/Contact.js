@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Contact.css';
 import {
   MDBContainer,
   MDBCol,
@@ -72,10 +73,14 @@ export default function Contact() {
         </MDBCol>
       </MDBRow>
 
-      <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', padding: '200px' }}>
-        ...
-        
-      </div>
+      <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', padding: '200px', color: 'yellow' }}>
+  <span className='bumping-text'>
+  I guarantee exceptional results and will provide your first service free—let's connect!
+      </span>
+</div>
+
+
+
     </MDBContainer>
   );
 }
