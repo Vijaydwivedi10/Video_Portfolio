@@ -27,6 +27,7 @@ import Before_After from '../ImagesVideos/Before_After.jpg';
 import Motion from '../ImagesVideos/Motion.jpg';
 import GKroop from '../ImagesVideos/GKroop.png';
 import Skills from '../ImagesVideos/Skills.gif';
+import Timeline from '../ImagesVideos/Timeline.gif';
 
 
 function Portfolio() {
@@ -47,7 +48,14 @@ function Portfolio() {
             alt="Skills" 
             className="skills-gif"
             />
+            </div>
 
+            <div className='Timeline'>
+            <img 
+            src={Timeline} 
+            alt="Timeline" 
+            className="Timeline-gif"
+            />
             </div>
             {/* Main heading */}
             <div className="main-heading">

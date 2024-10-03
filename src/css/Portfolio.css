@@ -274,3 +274,25 @@
 .iframe-container img:hover + .overlay-text {
     opacity: 1; /* Make the text visible on hover */
 }
+
+
+
+.Timeline {
+    width: 100%;       /* Full width of the parent container */
+    margin-bottom: 30px; /* Increased bottom margin for better spacing */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.Timeline-gif {
+    width: 100%;       /* Full width of the skills div */
+    height: auto;      /* Automatically adjusts the height to maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Soft shadow */
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.Timeline-gif:hover {
+    transform: scale(1.01); /* Slight zoom on hover */
+    filter: brightness(1.05); /* Slight brightness increase */
+}
