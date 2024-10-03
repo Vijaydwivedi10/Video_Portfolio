@@ -1,6 +1,6 @@
 .bumping-text {
     display: inline-block;
-    animation: bump-effect 3s infinite; /* 3-second cycle, repeating */
+    animation: bump-effect 2s infinite; /* 3-second cycle, repeating */
 }
 
 @keyframes bump-effect {
@@ -8,14 +8,14 @@
         transform: scale(1) /* Original position */
     }
     25% {
-        color: red;
-        transform: scale(1.05) /* Move up slightly */
+        color: rgb(0, 139, 177);
+        /* transform: scale(1.01) Move up slightly */
     }
     50% {
         ttransform: scale(1); /* Back to original position */
     }
     75% {
-        transform: scale(1.05); /* Move down slightly */
-        color: red;
+        /* transform: scale(1.01); Move down slightly */
+        color: rgb(76, 0, 255)d;
     }
 }
