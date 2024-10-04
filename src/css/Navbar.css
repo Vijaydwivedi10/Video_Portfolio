@@ -5,11 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Ensure body has top padding to prevent content from hiding behind the fixed navbar */
-body {
-    padding-top: 50px; /* Adjust this value based on your navbar's height */
+    padding-top: 50px; /* Ensure body has top padding to prevent content from hiding behind the fixed navbar */
 }
 
 /* Navbar Styles */
@@ -85,10 +81,23 @@ body {
 
 @media (max-width: 768px) {
     .navbar-brand {
-        font-size: 1.5em; /* Adjust for smaller screens */
+        font-size: 1em !important; /* Adjust for smaller screens */
+    }
+
+    .nav-link {
+        font-size: 0.6em !important; /* Smaller font size for links */
     }
 
     .navbar-collapse {
         display: block; /* Ensure proper stacking on small screens */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center links */
+    }
+
+    .menu-btn {
+        font-size: 24px; /* Adjust button size on smaller screens */
     }
 }
