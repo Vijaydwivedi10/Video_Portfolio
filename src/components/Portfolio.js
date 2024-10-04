@@ -30,7 +30,7 @@ import Skills from '../ImagesVideos/Skillsu.gif';
 import Timeline from '../ImagesVideos/Timelineu.gif';
 
 
-function Portfolio() {
+export default function Portfolio() {
     const [showVideo, setShowVideo] = useState(Array(10).fill(false)); // Adjust array size for total videos
 
     const handleVideoClick = (index) => {
@@ -500,4 +500,4 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+

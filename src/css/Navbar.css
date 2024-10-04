@@ -1,0 +1,94 @@
+/* src/css/Navbar.css */
+
+/* Reset some basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body has top padding to prevent content from hiding behind the fixed navbar */
+body {
+    padding-top: 50px; /* Adjust this value based on your navbar's height */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* High z-index to stay above other content */
+    background-color: rgb(56, 56, 56); /* Initial solid background */
+    transition: background-color 0.5s ease, padding 0.3s ease; /* Smooth transitions */
+    padding: 15px 20px; /* Initial padding */
+}
+
+.navbar.scrolled {
+    background-color: rgba(56, 56, 56, 0.85); /* Semi-transparent on scroll */
+    padding: 10px 20px; /* Reduced padding on scroll */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.navbar-brand, .nav-link {
+    color: white !important; /* Ensure text is white and overrides Bootstrap */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.navbar .navbar-collapse {
+    justify-content: flex-end; /* Align navbar items to the right */
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar-links.open {
+    display: block;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #ccc; /* Change link color on hover */
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8em;
+    color: wheat !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease, transform 0.3s ease; /* Hover effects */
+}
+
+.navbar-brand:hover {
+    color: #ff9800 !important; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5em; /* Adjust for smaller screens */
+    }
+
+    .navbar-collapse {
+        display: block; /* Ensure proper stacking on small screens */
+    }
+}

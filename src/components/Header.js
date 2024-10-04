@@ -12,6 +12,7 @@ function Header() {
     };
 
     return (
+        <section id="header" className="header">
         <div className="header-container">
             {/* Profile image section */}
             <div className="header-image-container">
@@ -57,6 +58,7 @@ function Header() {
             {/* Render Popup if it is open */}
             {isPopupOpen && <Popup onClose={handlePopupToggle} />}
         </div>
+        </section>
     );
 }
 
