@@ -26,6 +26,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
+/* Navbar Brand and Links Styles */
 .navbar-brand, .nav-link {
     color: white !important; /* Ensure text is white and overrides Bootstrap */
     cursor: pointer; /* Change cursor to pointer for better UX */
@@ -43,6 +44,7 @@ body {
     cursor: pointer;
 }
 
+/* Navbar Links */
 .navbar-links {
     list-style: none;
     padding: 0;
@@ -57,13 +59,15 @@ body {
 
 .nav-link {
     font-size: 1.2em;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition and scale on hover */
 }
 
 .nav-link:hover {
     color: #ccc; /* Change link color on hover */
+    transform: translateY(-2px); /* Slight zoom on hover */
 }
 
+/* Navbar Brand Styling */
 .navbar-brand {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.8em;
@@ -79,6 +83,7 @@ body {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .navbar-brand {
         font-size: 1em !important; /* Adjust for smaller screens */
@@ -101,3 +106,37 @@ body {
         font-size: 24px; /* Adjust button size on smaller screens */
     }
 }
+
+
+
+
+/* Insights link specific styles */
+.nav-link.insights-link {
+    position: relative !important;
+    display: inline-block !important; /* Necessary for the clipping effect */
+    color: transparent !important; /* Hide the text color, we will use a gradient background */
+    background-image: linear-gradient(270deg, #00ff11, #00ff00, #c8ff00) !important; /* Gradient colors */
+    background-clip: text !important; /* Clips the background to the text */
+    -webkit-background-clip: text !important; /* For Safari */
+    overflow: hidden !important; /* Ensures proper hiding of overflow */
+    background-size: 300% 100% !important; /* Size of the gradient for flowing effect */
+    animation: colorFlow 3s linear infinite !important; /* Color flow animation */
+}
+
+/* Gradient flow keyframes */
+@keyframes colorFlow {
+    0% {
+        background-position: 0% 50% !important; /* Start position */
+    }
+    100% {
+        background-position: 100% 50% !important; /* End position */
+    }
+}
+
+/* Stop animation on hover */
+.nav-link.insights-link:hover {
+    animation: none !important; /* Stop animation on hover */
+    color: white !important; /* Change text color on hover */
+    background-image: none !important; /* Remove background image on hover */
+}
+

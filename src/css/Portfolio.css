@@ -160,16 +160,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
-/* General Styling for Portfolio Images */
-.work-image {
-    width: 90%; /* Adjusted width */
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
-}
-
-
 /* Responsive Iframe Container */
 .iframe-container {
     position: relative;
@@ -198,7 +188,7 @@
 }
 
 .work-image {
-    width: 90%; /* Default width */
+    width: 99%; /* Default width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 12px; /* Rounded corners */
     margin-bottom: 4px;
@@ -209,7 +199,7 @@
 /* Media query for small devices (phones) */
 @media (max-width: 768px) {
     .work-image {
-        width: 120%; /* Make the image larger on small devices */
+        width: 130%; /* Make the image larger on small devices */
     }
 }
 

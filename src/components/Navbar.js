@@ -43,8 +43,8 @@ function CustomNavbar() {
                 <Navbar.Collapse id="basic-navbar-nav" className={isMenuOpen ? 'show' : ''}>
                     <Nav className="ms-auto">
                         <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
-                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                        <Nav.Link as={Link} to="/Insights">Insights</Nav.Link>
+                        <Nav.Link as={Link} to="/contact" >Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/Insights" className="nav-link insights-link">Insights</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import HireMeButton from './components/HireMeButton';
 import Navbar from './components/Navbar';  
-import Insights from './components/Insights'; // Import the Articles component
+import ComingSoon from './components/ComingSoon';
 
 function App() {
     const location = useLocation(); // Get current location from the router
@@ -53,7 +53,7 @@ function MainApp() {
             <Route path="/" element={<App />} />
             <Route path="/experience" element={<App />} />
             <Route path="/contact" element={<App />} />
-            <Route path="/Insights" element={<Insights />} />
+            <Route path="/Insights" element={<ComingSoon />} />
         </Routes>
     );
 }

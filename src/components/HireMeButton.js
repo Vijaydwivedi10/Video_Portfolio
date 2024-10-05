@@ -9,7 +9,7 @@ const HireMeButton = () => {
       target="_blank" 
       rel="noopener noreferrer"
     >
-      Hire Me
+      Chat / Hire
     </a>
   );
 };
