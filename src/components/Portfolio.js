@@ -11,7 +11,6 @@ import Thumbnail_YF from '../ImagesVideos/Thumbnail_YF.png';
 import Kroop from '../ImagesVideos/Kroop.png';
 import Viz from '../ImagesVideos/Viz.jpg';
 import Thumbnail_CA from '../ImagesVideos/Thumbnail_CA.png';
-// import Thumbnail_Q from '../ImagesVideos/Thumbnail_Q.png';
 import PHD_Home from '../ImagesVideos/PHD_Home.png';
 import besideyou from '../ImagesVideos/besideyou.png';
 import PHD_Post from '../ImagesVideos/PHD_Post.png';
