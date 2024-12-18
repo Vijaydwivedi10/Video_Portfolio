@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import HireMeButton from './components/HireMeButton';
 import Navbar from './components/Navbar';  
 import ComingSoon from './components/ComingSoon';
-
+import ColourTheory from './components/ColourTheory';
 function App() {
     const location = useLocation(); // Get current location from the router
 
@@ -54,6 +54,8 @@ function MainApp() {
             <Route path="/experience" element={<App />} />
             <Route path="/contact" element={<App />} />
             <Route path="/Insights" element={<ComingSoon />} />
+            <Route path="/colour-theory" element={<ColourTheory />} />
+            
         </Routes>
     );
 }

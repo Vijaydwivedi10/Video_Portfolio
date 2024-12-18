@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../css/Header.css';
 import vijayImage from '../Images/vijay.jpeg';
+import picofme from '../ImagesVideos/picofme.png';
 import { TypeAnimation } from 'react-type-animation';
 import Popup from './Popup'; // Import the Popup component
 
 function Header() {
+    const [hovered, setHovered] = useState(false); 
     const [isPopupOpen, setIsPopupOpen] = useState(false); // State to control popup visibility
 
     const handlePopupToggle = () => {
@@ -15,15 +17,17 @@ function Header() {
         <section id="header" className="header">
         <div className="header-container">
             {/* Profile image section */}
-            <div className="header-image-container">
-    <img
-        src={vijayImage}
-        alt="Vijay"
-        className="header-image"
-    />
-    
-</div>
-
+            <div 
+      className="header-image-container"
+      onMouseEnter={() => setHovered(true)} 
+      onMouseLeave={() => setHovered(false)}
+    >
+      <img
+        src={hovered ? picofme : vijayImage}  // Change image on hover
+        alt={hovered ? "Pic of Me" : "Vijay"} // Update alt text based on hovered state
+        className={`header-image ${hovered ? 'picofme' : 'vijay-image'}`} // Apply different classes based on hover
+      />
+    </div>
 
             {/* Header content section */}
             <div className="header-content">

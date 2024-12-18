@@ -8,25 +8,32 @@
     overflow: hidden; /* Hide any overflow content */
 }
 
+
 .header-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: -50px;
+    padding: 0; 
 }
 
 .header-image {
-    border-radius: 50%;
-    width: 60%;
-    max-width: 400px; /* Adjust the image size for responsiveness */
+    width: 100%;
+    max-width: 380px;
     height: auto;
     z-index: 1;
-    transition: transform 0.5s ease, filter 0.3s ease;
+    transition: border-radius 1.5s ease-in-out,opacity 2.5s ease-in-out, transform 2.5s ease-in-out, filter 2.5s ease-in-out;
+    border-radius: 100%;
+}
+
+.header-image-container:hover .header-image {
+    transform: scale(1.05); 
 }
 
 .header-image:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    filter: brightness(1.05); /* Slight brightness increase */
+    border-radius: 20%;
+    opacity: 0.6;
+    transform: scale(1.1); 
+    filter: brightness(1.05);
 }
 
 .header-content {

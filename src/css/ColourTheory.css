@@ -1,0 +1,183 @@
+/* Container styling */
+.colour-theory-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Title styling */
+.colour-theory-title {
+    color: #FF6F61;
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+/* Section headings */
+.colour-theory-container h3 {
+    color: #4A90E2;
+    font-size: 1.8em;
+    margin: 30px 0 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.colour-theory-container h3::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #FF6F61;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+/* Image and text wrapper for layout */
+.image-text-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Image on the left side */
+.colour-wheel-image {
+    max-width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.colour-wheel-image:hover {
+    transform: scale(1.1);
+}
+
+/* Image on the right side */
+.brand-colours-image {
+    max-width: 40%;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.brand-colours-image:hover {
+    transform: scale(1.1);
+}
+
+/* List styling */
+.colour-theory-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.colour-theory-container li {
+    flex-basis: 45%;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Red hover */
+.colour-theory-container li:nth-child(1):hover {
+    background-color: #ff6f61; /* Red background */
+}
+
+/* Blue hover */
+.colour-theory-container li:nth-child(2):hover {
+    background-color: #4A90E2; /* Blue background */
+}
+
+/* Yellow hover */
+.colour-theory-container li:nth-child(3):hover {
+    background-color: #f5c542; /* Yellow background */
+    color: #333; /* Dark text for contrast on yellow */
+}
+
+/* Green hover */
+.colour-theory-container li:nth-child(4):hover {
+    background-color: #42b983; /* Green background */
+}
+
+/* Purple hover */
+.colour-theory-container li:nth-child(5):hover {
+    background-color: #9063cd; /* Purple background */
+}
+
+/* Orange hover */
+.colour-theory-container li:nth-child(6):hover {
+    background-color: #f7883e; /* Orange background */
+}
+
+/* Black hover */
+.colour-theory-container li:nth-child(7):hover {
+    background-color: #333; /* Black background */
+}
+
+.colour-theory-container li:hover {
+    background-color: #FFEFEB;
+    transform: scale(1.05);
+}
+
+.colour-theory-container li strong {
+    color: #4A90E2;
+}
+
+/* Conclusion styling */
+.conclusion {
+    background: #FFF3E0;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .colour-theory-container {
+        padding: 20px;
+    }
+
+    .colour-theory-title {
+        font-size: 2.2em;
+    }
+
+    .image-text-wrapper {
+        flex-direction: column;
+    }
+
+    .colour-wheel-image, .brand-colours-image {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.colour-wheel-image {
+    animation: rotate 20s linear infinite; /* 10 seconds per rotation, infinite */
+}

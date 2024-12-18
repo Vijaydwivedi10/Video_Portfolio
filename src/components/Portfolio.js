@@ -11,7 +11,7 @@ import Thumbnail_YF from '../ImagesVideos/Thumbnail_YF.png';
 import Kroop from '../ImagesVideos/Kroop.png';
 import Viz from '../ImagesVideos/Viz.jpg';
 import Thumbnail_CA from '../ImagesVideos/Thumbnail_CA.png';
-import Thumbnail_Q from '../ImagesVideos/Thumbnail_Q.png';
+// import Thumbnail_Q from '../ImagesVideos/Thumbnail_Q.png';
 import PHD_Home from '../ImagesVideos/PHD_Home.png';
 import besideyou from '../ImagesVideos/besideyou.png';
 import PHD_Post from '../ImagesVideos/PHD_Post.png';
@@ -28,6 +28,7 @@ import Motion from '../ImagesVideos/Motion.jpg';
 import GKroop from '../ImagesVideos/GKroop.png';
 import Skills from '../ImagesVideos/Skillsu.gif';
 import Timeline from '../ImagesVideos/Timelineu.gif';
+import Thumbnail_P from '../ImagesVideos/Thumbnail_P.png';
 
 
 export default function Portfolio() {
@@ -62,6 +63,241 @@ export default function Portfolio() {
                 <h1>EXPERIENCE</h1>
             </div>
 
+
+            {/* <div className="section Gengee-wok">
+                <h2>Visual identity to GENGEE-MEDIA</h2>
+                <div className="gengee-content"></div>
+
+
+
+                </div>
+                 */}
+            
+            {/* Kroop AI Work */}
+            <div className="section kroopai-work">
+                <h2>Kroop AI Work</h2>
+                <div className="kroopai-content">
+
+
+                <div className="video">
+                        <h3>VizMantiz Promotional video</h3>
+                        <div className="iframe-container">
+                            {!showVideo[9] ? (
+                                <>
+                                <img
+                                    src={Thumbnail_P} // Use your poster image here for Kroop AI Video 4
+                                    alt="Video Thumbnail"
+                                    onClick={() => handleVideoClick(9)}
+                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
+                            ) : (
+                                <iframe
+                                    title="U10"
+                                    className="video-player"
+                                    src="https://drive.google.com/file/d/1cPJuNaU2NcLRZvs7DOeiErg8jKeItmkG/preview"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen>
+                                </iframe>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Kroop AI Video 1 */}
+                    <div className="video">
+                        <h3>Logo Animation Video</h3>
+                        <div className="iframe-container">
+                            {!showVideo[6] ? (
+                                <>
+                                <img
+                                    src={Kroop} // Use your poster image here for Kroop AI Video 1
+                                    alt="Video Thumbnail"
+                                    onClick={() => handleVideoClick(6)}
+                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
+                            ) : (
+                                <iframe
+                                    title="U7"
+                                    className="video-player"
+                                    src="https://drive.google.com/file/d/1XpijUN6c2BLQjt4hiU52NuEFFn-RZ_cL/preview"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen>
+                                </iframe>
+                            )}
+                        </div>
+                    </div>
+
+                   
+
+                    {/* Kroop AI Video 3 */}
+                    <div className="video">
+                        <h3>Custom Animation video</h3>
+                        <div className="iframe-container">
+                            {!showVideo[8] ? (
+                                <>
+                                <img
+                                    src={Thumbnail_CA} // Use your poster image here for Kroop AI Video 3
+                                    alt="Video Thumbnail"
+                                    onClick={() => handleVideoClick(8)}
+                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
+                            ) : (
+                                <iframe
+                                    title="U9"
+                                    className="video-player"
+                                    src="https://drive.google.com/file/d/1a1jHxmnG-NXK53VhKYfaOLgQ0Qqd9-1T/preview"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen>
+                                </iframe>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Kroop AI Video 4 */}
+                    <div className="video">
+                        <h3>Motion Graphics Video</h3>
+                        <div className="iframe-container">
+                            {!showVideo[9] ? (
+                                <>
+                                <img
+                                    src={Viz} // Use your poster image here for Kroop AI Video 4
+                                    alt="Video Thumbnail"
+                                    onClick={() => handleVideoClick(9)}
+                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
+                                    </>
+                            ) : (
+                                <iframe
+                                    title="U10"
+                                    className="video-player"
+                                    src="https://drive.google.com/file/d/1REmpxCvG5R1UQMd6AhtRLer04_7CefH8/preview"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen>
+                                </iframe>
+                            )}
+                        </div>
+                    </div>
+{/* 
+                     
+                     <div className="video">
+                        <h3>Quick Video Presentation</h3>
+                        <div className="iframe-container">
+                            {!showVideo[7] ? (
+                                <>
+                                <img
+                                    src={Thumbnail_Q} // Use your poster image here for Kroop AI Video 2
+                                    alt="Video Thumbnail"
+                                    onClick={() => handleVideoClick(7)}
+                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                                    <div className="overlay-text">Click to Play</div> } 
+                                    </>
+                            ) : (
+                                <iframe
+                                    title="U8"
+                                    className="video-player"
+                                    src="https://drive.google.com/file/d/1om4rM0LWO8hqPyzPjESJQZ6H9UW8mHEx/preview"
+                                    allow="autoplay; fullscreen"
+                                    allowFullScreen>
+                                </iframe>
+                            )}
+                        </div>
+                    </div> 
+                    */}
+                </div>
+            </div>
+
+            {/* Comparison Section */}
+            {/* Comparison Section */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className="section Comparison">
+    <h2>Motion Design Work</h2>
+    <div className="comparison-videos">
+        {[ 
+            // Reels-type videos
+            {
+                title: "Before After Video",
+                src: "https://drive.google.com/file/d/18uKJz5qZHh-fr4hLe3A_J9MIjMfPFYZg/preview",
+                thumbnail: Before_After // Use your specific thumbnail image for this video
+            },
+            // {
+            //     title: "Animation Tutorial",
+            //     src: "https://drive.google.com/file/d/1YiTqX5_aItKKCjmC1jRg9dW0Wifmou_V/preview",
+            //     thumbnail: Motion // Use your specific thumbnail image for this video
+            // },
+            {
+                title: "GenGee-Media Viusal Identity",
+                src: "https://drive.google.com/file/d/14gcrRHEg-jjDeTnHIO91aYJGq2NZYgFT/preview",
+                thumbnail: Motion // Use your specific thumbnail image for this video
+            }
+
+        ].map((video, index) => (
+            <div className="video" key={index}>
+                <h3>{video.title}</h3>
+                <div className="iframe-container reels-video">
+                    {!showVideo[index + 10] ? (
+                        <>
+                            <img
+                                src={video.thumbnail} // Use the thumbnail from the video object
+                                alt="Video Thumbnail"
+                                onClick={() => handleVideoClick(index + 10)}
+                                style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
+                            <div className="overlay-text">Click to Play</div> {/* Overlay text */}
+                        </>
+                    ) : (
+                        <iframe
+                            title="U12"
+                            className="video-player reels-video-player"
+                            src={video.src}
+                            allow="autoplay; fullscreen"
+                            allowFullScreen
+                        ></iframe>
+                    )}
+                </div>
+            </div>
+        ))}
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {/* CIPLA Work */}
             <div className="section cipla-work">
                 <h2>CIPLA Work</h2>
@@ -73,6 +309,12 @@ export default function Portfolio() {
         className="work-image"
     />
 </div>
+
+
+
+
+
+
 
 
                     {/* Video 1 */}
@@ -226,158 +468,21 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            {/* Kroop AI Work */}
-            <div className="section kroopai-work">
-                <h2>Kroop AI Work</h2>
-                <div className="kroopai-content">
 
-                    {/* Kroop AI Video 1 */}
-                    <div className="video">
-                        <h3>Logo Animation Video</h3>
-                        <div className="iframe-container">
-                            {!showVideo[6] ? (
-                                <>
-                                <img
-                                    src={Kroop} // Use your poster image here for Kroop AI Video 1
-                                    alt="Video Thumbnail"
-                                    onClick={() => handleVideoClick(6)}
-                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
-                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
-                                    </>
-                            ) : (
-                                <iframe
-                                    title="U7"
-                                    className="video-player"
-                                    src="https://drive.google.com/file/d/1XpijUN6c2BLQjt4hiU52NuEFFn-RZ_cL/preview"
-                                    allow="autoplay; fullscreen"
-                                    allowFullScreen>
-                                </iframe>
-                            )}
-                        </div>
-                    </div>
 
-                   
 
-                    {/* Kroop AI Video 3 */}
-                    <div className="video">
-                        <h3>Custom Animation video</h3>
-                        <div className="iframe-container">
-                            {!showVideo[8] ? (
-                                <>
-                                <img
-                                    src={Thumbnail_CA} // Use your poster image here for Kroop AI Video 3
-                                    alt="Video Thumbnail"
-                                    onClick={() => handleVideoClick(8)}
-                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
-                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
-                                    </>
-                            ) : (
-                                <iframe
-                                    title="U9"
-                                    className="video-player"
-                                    src="https://drive.google.com/file/d/1a1jHxmnG-NXK53VhKYfaOLgQ0Qqd9-1T/preview"
-                                    allow="autoplay; fullscreen"
-                                    allowFullScreen>
-                                </iframe>
-                            )}
-                        </div>
-                    </div>
 
-                    {/* Kroop AI Video 4 */}
-                    <div className="video">
-                        <h3>Motion Graphics Video</h3>
-                        <div className="iframe-container">
-                            {!showVideo[9] ? (
-                                <>
-                                <img
-                                    src={Viz} // Use your poster image here for Kroop AI Video 4
-                                    alt="Video Thumbnail"
-                                    onClick={() => handleVideoClick(9)}
-                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
-                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
-                                    </>
-                            ) : (
-                                <iframe
-                                    title="U10"
-                                    className="video-player"
-                                    src="https://drive.google.com/file/d/1REmpxCvG5R1UQMd6AhtRLer04_7CefH8/preview"
-                                    allow="autoplay; fullscreen"
-                                    allowFullScreen>
-                                </iframe>
-                            )}
-                        </div>
-                    </div>
 
-                     {/* Kroop AI Video 2 */}
-                     <div className="video">
-                        <h3>Quick Video Presentation</h3>
-                        <div className="iframe-container">
-                            {!showVideo[7] ? (
-                                <>
-                                <img
-                                    src={Thumbnail_Q} // Use your poster image here for Kroop AI Video 2
-                                    alt="Video Thumbnail"
-                                    onClick={() => handleVideoClick(7)}
-                                    style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
-                                    <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
-                                    </>
-                            ) : (
-                                <iframe
-                                    title="U8"
-                                    className="video-player"
-                                    src="https://drive.google.com/file/d/1om4rM0LWO8hqPyzPjESJQZ6H9UW8mHEx/preview"
-                                    allow="autoplay; fullscreen"
-                                    allowFullScreen>
-                                </iframe>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            {/* Comparison Section */}
-            {/* Comparison Section */}
-<div className="section Comparison">
-    <h2>Shorts/Reels</h2>
-    <div className="comparison-videos">
-        {[
-            {
-                title: "Before After Video",
-                src: "https://drive.google.com/file/d/18uKJz5qZHh-fr4hLe3A_J9MIjMfPFYZg/preview",
-                thumbnail: Before_After // Use your specific thumbnail image for this video
-            },
-            {
-                title: "Animation Tutorial",
-                src: "https://drive.google.com/file/d/1YiTqX5_aItKKCjmC1jRg9dW0Wifmou_V/preview",
-                thumbnail: Motion // Use your specific thumbnail image for this video
-            }
-        ].map((video, index) => (
-            <div className="video" key={index}>
-                <h3>{video.title}</h3>
-                <div className="iframe-container">
-                    {!showVideo[index + 10] ? (
-                        <>
-                        <img
-                            src={video.thumbnail} // Use the thumbnail from the video object
-                            alt="Video Thumbnail"
-                            onClick={() => handleVideoClick(index + 10)}
-                            style={{ cursor: 'pointer', width: '100%', height: 'auto' }} />
-                            <div className="overlay-text">Click to Play</div> {/* Overlay text */} 
-                            </>
-                    ) : (
-                        <iframe
-                            title="U12"
-                            className="video-player"
-                            src={video.src}
-                            allow="autoplay; fullscreen"
-                            allowFullScreen>
-                        </iframe>
-                    )}
-                </div>
-            </div>
-        ))}
-    </div>
-</div>
+
+
+
+
+
+
+
+
+
 
 
 

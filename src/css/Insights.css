@@ -1,58 +1,50 @@
-/* src/css/Insights.css */
-
+/* Insights.css */
 .insights-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f5f5f5; /* Light background */
-    min-height: 100vh; /* Full height of the viewport */
-    padding: 20px;
-}
-
-.insights-content {
-    text-align: center;
-    max-width: 800px; /* Limit the width of the content */
-    background-color: #ffffff; /* White background for content */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 40px;
-    margin-top: 20px; /* Space above content */
+    padding: 50px;
+    background-color: #ced5dc;
 }
 
 .insights-title {
-    font-size: 2.5rem; /* Large title */
-    color: #333; /* Dark color for text */
-    margin-bottom: 10px; /* Space below title */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #343a40;
 }
 
-.insights-subtitle {
-    font-size: 1.2rem; /* Subtitle font size */
-    color: #555; /* Grey color for subtitle */
-    margin-bottom: 30px; /* Space below subtitle */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 40px;
 }
-
-.coming-soon {
-    font-size: 1.5rem; /* Font size for "Coming Soon" */
-    color: #ff5722; /* Highlight color */
-    margin-top: 50px; /* Space above */
-}
-
-
-/* src/css/Insights.css */
-
-/* Existing styles... */
 
 .back-button {
-    display: inline-block; /* Make it behave like a button */
-    margin-top: 20px; /* Space above the button */
-    padding: 10px 20px; /* Padding for the button */
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition */
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .back-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #5a6268;
+}
+
+
+.insights-title {
+    text-align: center;
+    background: linear-gradient(270deg, #cb9021, #d5a83a, #cb9021); /* Gradient background */
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    letter-spacing: 8px;
+    font-family:inherit;
+    border-radius: 8px; /* Add slight border-radius for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-size: 300% 100%; /* Allow the gradient to expand for animation */
+    animation: liquidEffect 3s ease infinite; /* Animation for liquid effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
